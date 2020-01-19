@@ -367,4 +367,60 @@ body {
 .about .cards .four .icon .fas {
   color: #fddae2;
 }
+
+.work {
+  padding-top: 110px;
+  background: #fbfbfb;
+  padding-bottom: 150px;
+}
+
+.work .title {
+  text-align: center;
+  text-align: center;
+}
+
+.work .title h4 {
+  font-family: 'opensanssemibold', sans-serif;
+  font-size: 50px;
+}
+
+.work .title h4 span {
+  color: #fc6744;
+}
+
+.work .title p {
+  letter-spacing: 0.16px;
+}
+
+.work .cards {
+  margin-top: 100px;
+}
+
+.work .cards .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.work .cards .block:first-of-type {
+  margin-top: 0;
+}
+
+.work .cards .block .card {
+  background: #ff5c36;
+  width: 360px;
+  height: 360px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.work .cards .block .card:hover {
+  -webkit-box-shadow: 0 0 20px rgba(98, 98, 98, 0.5);
+          box-shadow: 0 0 20px rgba(98, 98, 98, 0.5);
+}
 /*# sourceMappingURL=style.css.map */
