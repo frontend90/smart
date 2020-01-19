@@ -1,0 +1,76 @@
+.about
+  padding-top: 135px 
+  padding-bottom: 150px 
+  & .title 
+    text-align: center
+    & h4 
+      +open_semi
+      font-size: 50px 
+      & span 
+        color: #fc6744
+    & p 
+      letter-spacing: 0.16px 
+  & .cards 
+    margin-top: 100px 
+    display: flex
+    justify-content: space-between
+    & .card 
+      text-align: center
+      width: 265px 
+      height: 265px 
+      position: relative
+      border-radius: 2px 
+      transition: 0.3s
+      &:hover
+        box-shadow: 0 0 20px rgba(#626262,0.5)
+      & .icon
+        margin-top: 40px 
+        & .fas 
+          +solid
+          font-size: 40px 
+      & .content 
+        margin-top: 10px 
+        & h5 
+          +open_semi
+          font-size: 20px 
+          letter-spacing: 0.2px 
+          color: #ffffff
+        & p 
+          font-size: 15px 
+          color: #ffffff
+          max-width: 170px 
+          margin: auto
+          margin-top: 10px 
+          line-height: 22px 
+      & .btn 
+        & button 
+          background: #ffffff
+          width: 230px 
+          height: 55px 
+          border-radius: 40px 
+          position: absolute
+          left: 50%
+          bottom: -27.5px
+          transform: translateX(-50%)
+          box-shadow: 0 0 20px rgba(#626262,0.5)
+    & .one 
+      background: #4eb2f7
+      & .icon 
+        & .fas 
+          color: #dcf0fd
+    & .two 
+      background: #c049f8
+      & .icon 
+        & .fas 
+          color: #f2dbfe
+    & .three 
+      background: #817eff
+      & .icon 
+        & .fas 
+          color: #e6e5ff
+    & .four
+      background: #f74770
+      & .icon 
+        & .fas 
+          color: #fddae2
+
