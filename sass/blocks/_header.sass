@@ -1,0 +1,97 @@
+.header 
+  height: 100vh 
+  background: #f5f5f5
+  & nav 
+    padding-top: 80px 
+    display: flex
+    justify-content: space-between
+    & .logo 
+      border: 3px solid #706b73
+      display: inline-flex
+      width: 150px 
+      height: 50px 
+      align-items: center
+      justify-content: center
+      border-radius: 2px 
+      & h1 
+        +open_semi
+        font-size: 37px 
+        color: #626262
+        & span 
+          color: #fc6744
+    & .dropdown 
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      width: 35px 
+      height: 20px 
+      position: relative
+      & span 
+        background: #706b73
+        width: 35px 
+        height: 4px 
+        &::before
+          content: ''
+          position: absolute
+          background: #706b73
+          width: 35px 
+          height: 4px 
+          top: 0px
+        &::after
+          content: ''
+          position: absolute
+          background: #706b73
+          width: 35px 
+          height: 4px 
+          bottom: 0
+    & .menu 
+      position: absolute
+  & .title 
+    position: absolute
+    top: 280px
+    left: 50%
+    transform: translateX(-50%)
+    text-align: center
+    & h3 
+      +open_semi
+      font-size: 50px 
+      & span 
+        color: #fc6744
+    & p 
+      margin-top: 15px
+      line-height: 25px 
+      max-width: 710px  
+  & .form 
+    position: absolute
+    bottom: 0
+    & form 
+      background: #ffffff
+      width: 375px 
+      height: 390px 
+      border-radius: 2px 
+      box-shadow: 0 0 20px rgba(#626262,0.2)
+      text-align: center
+      & h5 
+        padding-top: 20px 
+        font-size: 20px 
+        margin-bottom: 35px 
+        & span 
+          color: #ff5c36
+      & input[type="text"]
+        border-bottom: 1.3px solid rgba(#C7C7C7,0.5)
+        width: 290px 
+        height: 30px
+        &::placeholder 
+          font-size: 15px 
+        &:last-of-type
+          margin-top: 20px 
+      & textarea 
+        margin-top: 20px 
+        width: 290px 
+        height: 90px 
+        border-bottom: 1.3px solid rgba(#C7C7C7,0.5)
+        &::placeholder 
+          font-size: 15px 
+
+

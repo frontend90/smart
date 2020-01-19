@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'opensans';
+  src: url(../fonts/opensans.ttf);
+}
+
+@font-face {
+  font-family: 'opensanslight';
+  src: url(../fonts/opensanslight.ttf);
+}
+
+@font-face {
+  font-family: 'opensanssemibold';
+  src: url(../fonts/opensanssemibold.ttf);
+}
+
+@font-face {
+  font-family: 'sourcesanspro';
+  src: url(../fonts/sourcesanspro.ttf);
+}
+
+@font-face {
+  font-family: 'sourcesansproitalic';
+  src: url(../fonts/sourcesansproitalic.ttf);
+}
+
+@font-face {
+  font-family: 'sourcesansprosemibold';
+  src: url(../fonts/sourcesansprosemibold.ttf);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+body {
+  font-size: 16px;
+  color: #626262;
+  font-family: 'opensans', sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.header nav {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header nav .logo {
+  border: 3px solid #706b73;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
+.header nav .logo h1 {
+  font-family: 'opensanssemibold', sans-serif;
+  font-size: 37px;
+  color: #626262;
+}
+
+.header nav .logo h1 span {
+  color: #fc6744;
+}
+
+.header nav .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 35px;
+  height: 20px;
+  position: relative;
+}
+
+.header nav .dropdown span {
+  background: #706b73;
+  width: 35px;
+  height: 4px;
+}
+
+.header nav .dropdown span::before {
+  content: '';
+  position: absolute;
+  background: #706b73;
+  width: 35px;
+  height: 4px;
+  top: 0px;
+}
+
+.header nav .dropdown span::after {
+  content: '';
+  position: absolute;
+  background: #706b73;
+  width: 35px;
+  height: 4px;
+  bottom: 0;
+}
+
+.header nav .menu {
+  position: absolute;
+}
+
+.header .title {
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.header .title h3 {
+  font-family: 'opensanssemibold', sans-serif;
+  font-size: 50px;
+}
+
+.header .title h3 span {
+  color: #fc6744;
+}
+
+.header .title p {
+  margin-top: 15px;
+  line-height: 25px;
+  max-width: 710px;
+}
+
+.header .form {
+  position: absolute;
+  bottom: 0;
+}
+
+.header .form form {
+  background: #ffffff;
+  width: 375px;
+  height: 390px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 20px rgba(98, 98, 98, 0.2);
+          box-shadow: 0 0 20px rgba(98, 98, 98, 0.2);
+  text-align: center;
+}
+
+.header .form form h5 {
+  padding-top: 20px;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.header .form form h5 span {
+  color: #ff5c36;
+}
+
+.header .form form input[type="text"] {
+  border-bottom: 1.3px solid rgba(199, 199, 199, 0.5);
+  width: 290px;
+  height: 30px;
+}
+
+.header .form form input[type="text"]::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+.header .form form input[type="text"]:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.header .form form input[type="text"]::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.header .form form input[type="text"]::placeholder {
+  font-size: 15px;
+}
+
+.header .form form input[type="text"]:last-of-type {
+  margin-top: 20px;
+}
+
+.header .form form textarea {
+  margin-top: 20px;
+  width: 290px;
+  height: 90px;
+  border-bottom: 1.3px solid rgba(199, 199, 199, 0.5);
+}
+
+.header .form form textarea::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+.header .form form textarea:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.header .form form textarea::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.header .form form textarea::placeholder {
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */

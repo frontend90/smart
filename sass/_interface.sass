@@ -1,0 +1,37 @@
+@font-face 
+  font-family: 'opensans'
+  src: url(../fonts/opensans.ttf)
+@font-face 
+  font-family: 'opensanslight'
+  src: url(../fonts/opensanslight.ttf)
+@font-face 
+  font-family: 'opensanssemibold'
+  src: url(../fonts/opensanssemibold.ttf)
+@font-face 
+  font-family: 'sourcesanspro'
+  src: url(../fonts/sourcesanspro.ttf)
+@font-face 
+  font-family: 'sourcesansproitalic'
+  src: url(../fonts/sourcesansproitalic.ttf)
+@font-face 
+  font-family: 'sourcesansprosemibold'
+  src: url(../fonts/sourcesansprosemibold.ttf)
+@mixin open_reg
+  font-family: 'opensans', sans-serif
+@mixin open_light
+  font-family: 'opensanslight', sans-serif
+@mixin open_semi
+  font-family: 'opensanssemibold', sans-serif
+@mixin source_reg
+  font-family: 'sourcesanspro', sans-serif
+@mixin source_italic
+  font-family: 'sourcesansproitalic', sans-serif
+@mixin source_semi
+  font-family: 'sourcesansprosemibold', sans-serif
+.container 
+  max-width: 1140px 
+  margin: auto
+body 
+  font-size: 16px 
+  color: #626262
+  +open_reg
