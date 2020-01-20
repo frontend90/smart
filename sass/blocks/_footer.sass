@@ -1,0 +1,45 @@
+.footer 
+  padding-top: 40px 
+  padding-bottom: 50px 
+  background: #f7f7f7
+  text-align: center
+  & .btn 
+    & button 
+      width: 240px 
+      height: 55px 
+      background: #fdfdfd
+      border-radius: 40px 
+      border: 1px solid rgba(#626262,0.1)
+      box-shadow: 0 5px 10px rgba(#626262,0.1)
+      transition: 0.3s
+      &:hover
+        transform: scale(1.1)
+  & .block 
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 40px 
+    & .icon 
+      & a 
+        margin-left: 10px 
+        &:first-of-type
+          margin-left: 0
+        & .fab 
+          +brand 
+          color: #ffffff
+          font-size: 18px 
+          width: 55px 
+          height: 55px 
+          border-radius: 50%
+          background: #d3d3d3
+          display: inline-flex
+          justify-content: center
+          align-items: center
+          transition: 0.3s
+          &:hover
+            background: #ff6e47
+            box-shadow: 0 0px 20px rgba(#626262,0.3)
+    & .copy 
+      margin-left: 20px 
+      & p 
+        font-size: 17px 

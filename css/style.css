@@ -919,4 +919,102 @@ body {
 .clients .clients-slider-wrap .slider-btn button .fas {
   font-family: 'fa-solid-900';
 }
+
+.partners {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background: #fbfbfb;
+}
+
+.partners .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.footer .btn button {
+  width: 240px;
+  height: 55px;
+  background: #fdfdfd;
+  border-radius: 40px;
+  border: 1px solid rgba(98, 98, 98, 0.1);
+  -webkit-box-shadow: 0 5px 10px rgba(98, 98, 98, 0.1);
+          box-shadow: 0 5px 10px rgba(98, 98, 98, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .btn button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.footer .block .icon a {
+  margin-left: 10px;
+}
+
+.footer .block .icon a:first-of-type {
+  margin-left: 0;
+}
+
+.footer .block .icon a .fab {
+  font-family: 'fa-brands-400';
+  color: #ffffff;
+  font-size: 18px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #d3d3d3;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .block .icon a .fab:hover {
+  background: #ff6e47;
+  -webkit-box-shadow: 0 0px 20px rgba(98, 98, 98, 0.3);
+          box-shadow: 0 0px 20px rgba(98, 98, 98, 0.3);
+}
+
+.footer .block .copy {
+  margin-left: 20px;
+}
+
+.footer .block .copy p {
+  font-size: 17px;
+}
 /*# sourceMappingURL=style.css.map */
