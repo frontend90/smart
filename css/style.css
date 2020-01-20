@@ -423,4 +423,106 @@ body {
   -webkit-box-shadow: 0 0 20px rgba(98, 98, 98, 0.5);
           box-shadow: 0 0 20px rgba(98, 98, 98, 0.5);
 }
+
+.services {
+  padding-top: 130px;
+  padding-bottom: 180px;
+}
+
+.services .title {
+  text-align: center;
+}
+
+.services .title h4 {
+  font-family: 'opensanssemibold', sans-serif;
+  font-size: 50px;
+}
+
+.services .title h4 span {
+  color: #fc6744;
+}
+
+.services .title p {
+  letter-spacing: 0.16px;
+}
+
+.services .content {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services .content .link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 95px;
+  background: #fbfbfb;
+  margin-top: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .content .link a:first-of-type {
+  margin-top: 0;
+}
+
+.services .content .link a:hover {
+  -webkit-box-shadow: 0 0 20px rgba(98, 98, 98, 0.2);
+          box-shadow: 0 0 20px rgba(98, 98, 98, 0.2);
+  background: #ffffff;
+}
+
+.services .content .desc h5 {
+  font-size: 30px;
+}
+
+.services .content .desc .line {
+  width: 60px;
+  height: 3px;
+  background: #ff5c36;
+  margin: 10px 0;
+}
+
+.services .content .desc p {
+  line-height: 25px;
+  max-width: 510px;
+  margin-top: 20px;
+}
+
+.services .content .desc p:first-of-type {
+  margin-top: 0;
+}
+
+.services .content .desc .btn {
+  margin-top: 25px;
+}
+
+.services .content .desc .btn button {
+  background: #ffffff;
+  width: 230px;
+  height: 55px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 5px 15px rgba(98, 98, 98, 0.2);
+          box-shadow: 0 5px 15px rgba(98, 98, 98, 0.2);
+  border: 1px solid rgba(98, 98, 98, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .content .desc .btn button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=style.css.map */
