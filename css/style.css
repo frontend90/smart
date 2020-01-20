@@ -33,6 +33,11 @@
   src: url(../fonts/fa-solid-900.ttf);
 }
 
+@font-face {
+  font-family: 'fa-brands-400';
+  src: url(../fonts/fa-brands-400.ttf);
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -524,5 +529,224 @@ body {
 .services .content .desc .btn button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.team {
+  padding-top: 130px;
+  padding-bottom: 150px;
+  background: #fbfbfb;
+}
+
+.team .title {
+  text-align: center;
+}
+
+.team .title h4 {
+  font-family: 'opensanssemibold', sans-serif;
+  font-size: 50px;
+}
+
+.team .title h4 span {
+  color: #fc6744;
+}
+
+.team .title p {
+  letter-spacing: 0.16px;
+}
+
+.team .content {
+  margin-top: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team .content .card {
+  width: 360px;
+  height: 445px;
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.team .content .card:hover .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.team .content .card:hover .back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.team .content .card .front {
+  background: #ff5c36;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.team .content .card .front .author {
+  text-align: center;
+  background: #ffffff;
+  width: 265px;
+  height: 95px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -47.5px;
+  -webkit-box-shadow: 0 5px 20px rgba(98, 98, 98, 0.2);
+          box-shadow: 0 5px 20px rgba(98, 98, 98, 0.2);
+}
+
+.team .content .card .front .author h5 {
+  font-family: 'opensanssemibold', sans-serif;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.team .content .card .front .author p {
+  font-family: 'opensanslight', sans-serif;
+  font-size: 15px;
+}
+
+.team .content .card .back {
+  background: #fff3f0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.team .content .card .back .skills {
+  text-align: center;
+  margin-top: 170px;
+}
+
+.team .content .card .back .skills .skill p {
+  font-size: 10px;
+}
+
+.team .content .card .back .skills .design .line {
+  width: 150px;
+  height: 3px;
+  background: #817f7e;
+  margin: auto;
+  margin-top: 5px;
+  position: relative;
+}
+
+.team .content .card .back .skills .design .line::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background: #ff6e47;
+  top: 0;
+  left: 0;
+}
+
+.team .content .card .back .skills .english {
+  margin-top: 10px;
+}
+
+.team .content .card .back .skills .english .line {
+  width: 150px;
+  height: 3px;
+  background: #817f7e;
+  margin: auto;
+  margin-top: 5px;
+  position: relative;
+}
+
+.team .content .card .back .skills .english .line::before {
+  content: '';
+  position: absolute;
+  width: 110px;
+  height: 3px;
+  background: #ff6e47;
+  top: 0;
+  left: 0;
+}
+
+.team .content .card .back .skills .communication {
+  margin-top: 10px;
+}
+
+.team .content .card .back .skills .communication .line {
+  width: 150px;
+  height: 3px;
+  background: #817f7e;
+  margin: auto;
+  margin-top: 5px;
+  position: relative;
+}
+
+.team .content .card .back .skills .communication .line::before {
+  content: '';
+  position: absolute;
+  width: 115px;
+  height: 3px;
+  background: #ff6e47;
+  top: 0;
+  left: 0;
+}
+
+.team .content .card .back .author {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.team .content .card .back .author h5 {
+  font-family: 'opensanssemibold', sans-serif;
+  font-size: 30px;
+}
+
+.team .content .card .back .author p {
+  font-family: 'opensanslight', sans-serif;
+  color: #ff724c;
+}
+
+.team .content .card .back .icon {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.team .content .card .back .icon a {
+  margin-left: 10px;
+}
+
+.team .content .card .back .icon a:first-of-type {
+  margin-left: 0;
+}
+
+.team .content .card .back .icon a .fab {
+  font-family: 'fa-brands-400';
+  color: #626262;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team .content .card .back .icon a .fab:hover {
+  color: #ff724c;
 }
 /*# sourceMappingURL=style.css.map */

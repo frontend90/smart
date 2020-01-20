@@ -1,0 +1,142 @@
+.team 
+  padding-top: 130px 
+  padding-bottom: 150px 
+  background: #fbfbfb
+  & .title 
+    text-align: center
+    & h4 
+      +open_semi
+      font-size: 50px 
+      & span 
+        color: #fc6744
+    & p 
+      letter-spacing: 0.16px 
+  & .content 
+    margin-top: 110px 
+    display: flex
+    justify-content: space-between
+    & .card 
+      width: 360px 
+      height: 445px 
+      position: relative
+      perspective: 1000px 
+      &:hover .front
+        transform: rotateY(180deg)
+      &:hover .back 
+        transform: rotateY(0)
+      & .front 
+        background: #ff5c36
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0 
+        border-radius: 2px 
+        transition: 2s
+        backface-visibility: hidden
+        & .author 
+          text-align: center
+          background: #ffffff
+          width: 265px 
+          height: 95px 
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+          bottom: -47.5px 
+          box-shadow: 0 5px 20px rgba(#626262,0.2)
+          & h5 
+            +open_semi
+            font-size: 30px 
+            margin-top: 10px 
+          & p 
+            +open_light
+            font-size: 15px 
+      & .back 
+        background: #fff3f0
+        position: absolute
+        width: 100%
+        height: 100% 
+        top: 0
+        left: 0
+        border-radius: 2px 
+        transition: 2s
+        transform: rotateY(180deg)
+        backface-visibility: hidden
+        & .skills 
+          text-align: center
+          margin-top: 170px 
+          & .skill 
+            & p 
+              font-size: 10px 
+          & .design 
+            & .line 
+              width: 150px 
+              height: 3px 
+              background: #817f7e
+              margin: auto
+              margin-top: 5px 
+              position: relative
+              &::before
+                content: ''
+                position: absolute
+                width: 120px 
+                height: 3px 
+                background: #ff6e47
+                top: 0
+                left: 0
+          & .english 
+            margin-top: 10px 
+            & .line 
+              width: 150px 
+              height: 3px 
+              background: #817f7e
+              margin: auto
+              margin-top: 5px 
+              position: relative
+              &::before
+                content: ''
+                position: absolute
+                width: 110px 
+                height: 3px 
+                background: #ff6e47
+                top: 0
+                left: 0     
+          & .communication 
+            margin-top: 10px 
+            & .line 
+              width: 150px 
+              height: 3px 
+              background: #817f7e
+              margin: auto
+              margin-top: 5px 
+              position: relative
+              &::before
+                content: ''
+                position: absolute
+                width: 115px 
+                height: 3px 
+                background: #ff6e47
+                top: 0
+                left: 0               
+        & .author 
+          margin-top: 60px 
+          text-align: center
+          & h5 
+            +open_semi
+            font-size: 30px 
+          & p 
+            +open_light
+            color: #ff724c
+        & .icon 
+          text-align: center
+          margin-top: 10px 
+          & a 
+            margin-left: 10px 
+            &:first-of-type
+              margin-left: 0
+            & .fab
+              +brand  
+              color: #626262
+              transition: 0.3s 
+              &:hover
+                color: #ff724c
