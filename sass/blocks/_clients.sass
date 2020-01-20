@@ -1,0 +1,109 @@
+.clients 
+  padding-top: 120px 
+  padding-bottom: 140px 
+  & .title 
+    text-align: center
+    & h4 
+      +open_semi
+      font-size: 50px 
+      & span 
+        color: #fc6744
+    & p 
+      letter-spacing: 0.16px 
+  & .clients-slider-wrap
+    margin-top: 80px 
+    position: relative
+    height: 390px 
+    & .clients-slider
+      text-align: center
+      height: 330px 
+      & .slick-list 
+        padding-top: 50px 
+        height: 330px 
+      & .slick-dots 
+        bottom: -35px 
+        height: 5px 
+        & .slick-active 
+          & button 
+            &::before
+              color: #ff6e47
+        & li 
+          margin: 2px 
+          & button 
+            height: 5px 
+            padding: 0
+            &::before
+              content: '-'
+              opacity: 1
+              font-size: 60px 
+              color: #e0e0e0
+              +open_semi
+      & .block 
+        max-width: 540px 
+        height: 275px 
+        text-align: center
+        position: relative
+        border: 1px solid rgba(#626262,0.2)
+        border-radius: 2px 
+        transition: 0.3s 
+        cursor: pointer
+        &:hover
+          border: none 
+          box-shadow: 0 5px 20px rgba(#626262,0.2)
+        & .avatar 
+          position: absolute
+          width: 100px 
+          height: 100px 
+          background: #ffffff
+          border-radius: 50%
+          left: 50%
+          transform: translateX(-50%)
+          top: -50px 
+          border: 1px solid rgba(#626262,0.2)
+        & p 
+          margin: auto
+          margin-top: 85px 
+          max-width: 450px 
+          +source_reg
+          font-size: 17px 
+          line-height: 27px 
+        & .rating 
+          margin-top: 10px 
+          & .fas 
+            +solid 
+            font-size: 14px 
+            color: #ffef3b
+        & .author 
+          margin-top: 10px 
+          & p 
+            margin-top: 0
+            +source_semi
+            font-size: 17px 
+            & span 
+              +source_italic
+    & .slider-btn
+      & .arrow-left
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -22.5px 
+        box-shadow: 0 5px 20px rgba(#626262,0.2)
+      & .arrow-right
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: -22.5px 
+        box-shadow: 0 5px 20px rgba(#626262,0.2)        
+      & button 
+        width: 45px 
+        height: 45px 
+        background: #ffffff
+        border-radius: 50%
+        transition: 0.3s
+        z-index: 1
+        &:hover
+          background: #ff6e47
+        &:hover .fas 
+          color: #ffffff
+        & .fas 
+          +solid 
