@@ -347,6 +347,7 @@ body {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 1;
 }
 
 .header .anchor:hover {
@@ -1123,5 +1124,14 @@ body {
 
 .footer .block .copy p {
   font-size: 17px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
