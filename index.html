@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <div class="container">
       <nav>
         <div class="logo">
@@ -25,7 +25,18 @@
           <span></span>
         </div>
         <!-- /.dropdown -->
-        <div class="menu"></div>
+        <div class="menu">
+          <div class="close"></div>
+          <!-- /.close -->
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#team">Team</a>
+          <a href="#clients">Clients</a>
+          <a href="#partners">Partners</a>
+          <a href="#contact">Contact</a>
+        </div>
         <!-- /.menu -->
       </nav>
     </div>
@@ -53,11 +64,15 @@
       <!-- /.form -->
     </div>
     <!-- /.container -->
+    <div class="anchor">
+      <a href="#home"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <!-- /.anchor -->
   </header>
   <!-- /.header -->
 
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="title">
           <h4><span>Working</span> Process</h4>
@@ -135,7 +150,7 @@
       <!-- /.container -->
     </section>
     <!-- /.about -->
-    <section class="work">
+    <section class="work" id="work">
       <div class="container">
         <div class="title">
           <h4><span>Featured</span> Works</h4>
@@ -176,7 +191,7 @@
       <!-- /.container -->
     </section>
     <!-- /.work -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <div class="title">
           <h4><span>Services</span> We Provide</h4>
@@ -217,7 +232,7 @@
       <!-- /.container -->
     </section>
     <!-- /.services -->
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <div class="title">
           <h4><span>Team</span> Chinen & Skills</h4>
@@ -369,7 +384,7 @@
       <!-- /.container -->
     </section>
     <!-- /.team -->
-    <section class="clients">
+    <section class="clients" id="clients">
       <div class="container">
         <div class="title">
           <h4><span>Clients</span> Said</h4>
@@ -475,7 +490,7 @@
       <!-- /.container -->
     </section>
     <!-- /.clients -->
-    <section class="partners">
+    <section class="partners" id="partners">
       <div class="container">
         <div class="img">
           <img src="img/partners/1.png" alt="">
@@ -492,7 +507,7 @@
     <!-- /.partners -->
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
       <div class="btn">
         <button>Contact Us</button>
