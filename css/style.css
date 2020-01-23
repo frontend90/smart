@@ -141,6 +141,8 @@ body {
           transform: translate(-50%, -50%);
   z-index: 1;
   border-radius: 2px;
+  -webkit-box-shadow: 0 0 20px rgba(98, 98, 98, 0.5);
+          box-shadow: 0 0 20px rgba(98, 98, 98, 0.5);
   display: none;
 }
 
@@ -328,13 +330,22 @@ body {
 }
 
 .header .anchor {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.header .anchor a .fas {
+  font-family: 'fa-solid-900';
+  color: #ffffff;
   background: rgba(98, 98, 98, 0.5);
   width: 30px;
   height: 30px;
   border-radius: 2px;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,19 +355,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  z-index: 1;
 }
 
-.header .anchor:hover {
+.header .anchor a .fas:hover {
   background: #fc6744;
-}
-
-.header .anchor a .fas {
-  font-family: 'fa-solid-900';
-  color: #ffffff;
 }
 
 .about {
@@ -1126,12 +1130,793 @@ body {
   font-size: 17px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header nav .menu {
+    width: 50%;
+  }
+  .header nav .menu a {
+    margin-top: 15px;
+  }
+  .header nav .menu .close {
+    top: 5px;
+    right: 5px;
+  }
+  .header .title {
+    top: 25%;
+  }
+  .header .title h3 {
+    font-size: 30px;
+  }
+  .header .form {
+    display: none;
+  }
+  .header .anchor {
+    right: 20px;
+    bottom: 20px;
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .cards .card {
+    margin-top: 70px;
+  }
+  .about .cards .card:first-of-type {
+    margin-top: 0;
+  }
+  .work .cards .block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work .cards .block .card {
+    margin-top: 50px;
+  }
+  .work .cards .block .card:first-of-type {
+    margin-top: 0;
+  }
+  .services .content {
+    margin-top: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .content .link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .content .link a {
+    margin: 20px;
+  }
+  .services .content .link a:first-of-type {
+    margin-top: 20px;
+  }
+  .services .content .desc {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .services .content .desc .line {
+    margin: 10px auto;
+  }
+  .services .content .img {
+    display: none;
+  }
+  .team .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .content .card {
+    height: 300px;
+    margin-top: 80px;
+  }
+  .team .content .card:first-of-type {
+    margin-top: 0;
+  }
+  .team .content .card .back .skills {
+    margin-top: 40px;
+  }
+  .clients .clients-slider-wrap {
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 95%;
+  }
+  .partners .img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .img img {
+    padding: 20px;
+  }
+  .footer .block {
+    display: block;
+  }
+  .footer .block .copy {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 412px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header nav .menu {
+    width: 50%;
+  }
+  .header nav .menu a {
+    margin-top: 15px;
+  }
+  .header nav .menu .close {
+    top: 5px;
+    right: 5px;
+  }
+  .header .title {
+    top: 25%;
+  }
+  .header .title h3 {
+    font-size: 30px;
+  }
+  .header .form {
+    display: none;
+  }
+  .header .anchor {
+    right: 20px;
+    bottom: 20px;
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .cards .card {
+    margin-top: 70px;
+  }
+  .about .cards .card:first-of-type {
+    margin-top: 0;
+  }
+  .work .cards .block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work .cards .block .card {
+    margin-top: 50px;
+  }
+  .work .cards .block .card:first-of-type {
+    margin-top: 0;
+  }
+  .services .content {
+    margin-top: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .content .link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .content .link a {
+    margin: 20px;
+  }
+  .services .content .link a:first-of-type {
+    margin-top: 20px;
+  }
+  .services .content .desc {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .services .content .desc .line {
+    margin: 10px auto;
+  }
+  .services .content .img {
+    display: none;
+  }
+  .team .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .content .card {
+    height: 300px;
+    margin-top: 80px;
+  }
+  .team .content .card:first-of-type {
+    margin-top: 0;
+  }
+  .team .content .card .back .skills {
+    margin-top: 40px;
+  }
+  .clients .clients-slider-wrap {
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 90%;
+  }
+  .partners .img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .img img {
+    padding: 20px;
+  }
+  .footer .block {
+    display: block;
+  }
+  .footer .block .copy {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width: 414px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header nav .menu {
+    width: 50%;
+  }
+  .header nav .menu a {
+    margin-top: 15px;
+  }
+  .header nav .menu .close {
+    top: 5px;
+    right: 5px;
+  }
+  .header .title {
+    top: 25%;
+  }
+  .header .title h3 {
+    font-size: 30px;
+  }
+  .header .form {
+    display: none;
+  }
+  .header .anchor {
+    right: 20px;
+    bottom: 20px;
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .cards .card {
+    margin-top: 70px;
+  }
+  .about .cards .card:first-of-type {
+    margin-top: 0;
+  }
+  .work .cards .block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work .cards .block .card {
+    margin-top: 50px;
+  }
+  .work .cards .block .card:first-of-type {
+    margin-top: 0;
+  }
+  .services .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .content .desc {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .services .content .desc .line {
+    margin: 10px auto;
+  }
+  .services .content .img {
+    display: none;
+  }
+  .team .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .content .card {
+    height: 300px;
+    margin-top: 80px;
+  }
+  .team .content .card:first-of-type {
+    margin-top: 0;
+  }
+  .team .content .card .back .skills {
+    margin-top: 40px;
+  }
+  .clients .clients-slider-wrap {
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 90%;
+  }
+  .partners .img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .img img {
+    padding: 20px;
+  }
+  .footer .block {
+    display: block;
+  }
+  .footer .block .copy {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 667px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 20px;
+  }
+  .header nav .menu {
+    width: 50%;
+    height: 100%;
+  }
+  .header nav .menu a {
+    margin-top: 13px;
+  }
+  .header .title {
+    top: 30%;
+  }
+  .header .title h3 {
+    font-size: 23px;
+  }
+  .header .form {
+    display: none;
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about .cards .one {
+    margin-bottom: 70px;
+  }
+  .work .cards .block .card {
+    width: 190px;
+  }
+  .services .content .desc {
+    margin-left: 50px;
+  }
+  .services .content .img {
+    display: none;
+  }
+  .team .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .team .content .card {
+    height: 300px;
+    margin-top: 80px;
+  }
+  .team .content .card:first-of-type {
+    margin-top: 0;
+  }
+  .team .content .card .back .skills {
+    margin-top: 40px;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 99%;
+  }
+  .partners .img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .img img {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 668px) and (max-width: 684px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 20px;
+  }
+  .header nav .menu {
+    width: 50%;
+    height: 100%;
+  }
+  .header nav .menu a {
+    margin-top: 20px;
+  }
+  .header .title {
+    top: 30%;
+  }
+  .header .title h3 {
+    font-size: 25px;
+  }
+  .header .form {
+    display: none;
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about .cards .one {
+    margin-bottom: 70px;
+  }
+  .work .cards .block .card {
+    width: 190px;
+  }
+  .services .content .desc {
+    margin-left: 50px;
+  }
+  .services .content .img {
+    display: none;
+  }
+  .team .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .team .content .card {
+    height: 300px;
+    margin-top: 80px;
+  }
+  .team .content .card:first-of-type {
+    margin-top: 0;
+  }
+  .team .content .card .back .skills {
+    margin-top: 40px;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 99%;
+  }
+  .partners .img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .img img {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 685px) and (max-width: 734px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 20px;
+  }
+  .header nav .menu {
+    width: 50%;
+    height: 100%;
+  }
+  .header nav .menu a {
+    margin-top: 20px;
+  }
+  .header .title {
+    top: 30%;
+  }
+  .header .title h3 {
+    font-size: 25px;
+  }
+  .header .form {
+    display: none;
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about .cards .one {
+    margin-bottom: 70px;
+  }
+  .work .cards .block .card {
+    width: 210px;
+  }
+  .services .content .img {
+    display: none;
+  }
+  .team .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .team .content .card {
+    height: 300px;
+    margin-top: 80px;
+  }
+  .team .content .card:first-of-type {
+    margin-top: 0;
+  }
+  .team .content .card .back .skills {
+    margin-top: 40px;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 99%;
+  }
+  .partners .img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .img img {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 735px) and (max-width: 736px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 20px;
+  }
+  .header nav .menu {
+    width: 50%;
+    height: 100%;
+  }
+  .header nav .menu a {
+    margin-top: 15px;
+  }
+  .header .title {
+    top: 30%;
+  }
+  .header .title h3 {
+    font-size: 25px;
+  }
+  .header .form {
+    display: none;
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about .cards .one {
+    margin-bottom: 70px;
+  }
+  .work .cards .block .card {
+    width: 210px;
+  }
+  .services .content .img {
+    display: none;
+  }
+  .team .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .team .content .card {
+    height: 300px;
+    margin-top: 80px;
+  }
+  .team .content .card:first-of-type {
+    margin-top: 0;
+  }
+  .team .content .card .back .skills {
+    margin-top: 40px;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 99%;
+  }
+  .partners .img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .img img {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 737px) and (max-width: 768px) {
   .container {
     max-width: 90%;
   }
   .header nav {
     padding-top: 50px;
+  }
+  .header nav .menu {
+    width: 50%;
+  }
+  .header .title {
+    top: 20%;
+  }
+  .header .title h3 {
+    font-size: 28px;
+  }
+  .header .form {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about .cards .one {
+    margin-bottom: 70px;
+  }
+  .work .cards .block .card {
+    width: 210px;
+  }
+  .services .content .img {
+    display: none;
+  }
+  .team .content .card {
+    width: 220px;
+  }
+  .team .content .card .front .author {
+    width: 90%;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 99%;
+  }
+  .partners .img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .img img {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  .header nav {
+    padding-top: 50px;
+  }
+  .header nav .menu {
+    height: 70%;
+  }
+  .header .title {
+    top: 20%;
+  }
+  .header .title h3 {
+    font-size: 30px;
+  }
+  .header .form {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .header .form form {
+    height: 350px;
+  }
+  .header .form form h5 {
+    margin-bottom: 20px;
+  }
+  .header .anchor {
+    display: none;
+  }
+  .about .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about .cards .card {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+  .about .cards .one {
+    margin-bottom: 70px;
+  }
+  .work .cards .block .card {
+    width: 290px;
+  }
+  .services .content .desc {
+    margin-left: 50px;
+  }
+  .team .content .card {
+    width: 290px;
+  }
+  .clients .clients-slider-wrap .clients-slider .block {
+    max-width: 99%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,14 @@ $('.clients-slider').slick({
   slidesToScroll: 2,
   prevArrow: $('.arrow-left'),
   nextArrow: $('.arrow-right'),
-  dots: true
+  dots: true,
+  responsive: [{
+    breakpoint: 415,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  }]
 });
 
 /**************     dropdown     **************/

@@ -55,6 +55,7 @@
       transform: translate(-50%,-50%)
       z-index: 1
       border-radius: 2px 
+      box-shadow: 0 0 20px rgba(#626262,0.5)
       display: none 
       &.active 
         display: block 
@@ -153,25 +154,26 @@
           &:hover
             transform: scale(1.1)
   & .anchor 
-    background: rgba(#626262,0.5)
-    width: 30px 
-    height: 30px
-    border-radius: 2px 
     position: fixed
     bottom: 50px 
     right: 50px 
-    display: flex
-    justify-content: center
-    align-items: center
     cursor: pointer
     transition: 0.3s
     z-index: 1
-    &:hover
-      background: #fc6744
     & a 
       & .fas 
         +solid 
         color: #ffffff
+        background: rgba(#626262,0.5)
+        width: 30px 
+        height: 30px
+        border-radius: 2px 
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: 0.3s
+        &:hover
+          background: #fc6744
 
 
 
